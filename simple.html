@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành tạo form cơ bản</title>
+</head>
+<body>
+    <h1>Order Form</h1>
+    <form method="get" action="simpleform.html">
+        <h3>What would you like to buy</h3>
+        <select name="whattoeat">
+            <option value="pizza">Pizza</option>
+            <option value="Phở">Phở</option>
+            <option value="Bún Bò">Bún bò</option>
+        </select>
+        <h3>How many would you like to order?</h3>
+        <input type="radio" name="radio"> 1 - 10$ <br>
+        <input type="radio" name="radio"> 2 - 20$ <br>
+        <input type="radio" name="radio"> 3 - 25$ <br>
+        <h3>Name <span style="color: red">*</span></h3>
+        <input type="text" name="firstname" placeholder="FirstName" size="35">
+        <input type="text" name="lastname" placeholder="LastName" size="35">
+        <h3>Email</h3>
+        <input type="text" name="Email" placeholder="abc@gmail.com" size="35">
+        <h3>Phone number</h3>
+        <input type="text" name="phone1" size="5"> - 
+        <input type="text" name="phone2" size="5"> - 
+        <input type="text" name="phone3" size="5">
+        <br>
+        <br>
+        <input type="button" name="btSubmit" value="Submit">
+    </form>
+</body>
+</html>
