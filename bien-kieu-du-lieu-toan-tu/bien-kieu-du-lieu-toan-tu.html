@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+    <form>
+        Nhập điểm Lý:<input type="number" name="num" id="a"> <br>
+        Nhập điểm Hóa:<input type="number" name="num" id="b"> <br>
+        Nhập điểm Sinh:<input type="number" name="num" id="c"> <br>
+        <input type="button" onclick="average ()" value="Tính toán">
+        <p>Trung bình:</p><span id="dtb"></span><br>
+    </form>
+    <form>
+      <table>
+        <tr>
+          <th>Nhập nhiệt độ (độ C):</th>
+          <th><input type="number" name="degree" id="Cel"></th>
+        </tr>
+        <tr>
+          <th>Độ F:</th>
+          <td><span id="fah"></span></td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="temparature ()" value="Tính toán"></td>
+        </tr>
+      </table>
+    </form>
+    <br><br><br>
+    <form>
+      <table>
+        <tr>
+          <th>Nhập bán kính:</th>
+          <th><input type="number" name="bankinh" id="R"></th>
+        </tr>
+        <tr>
+        <th>Chu vi hình tròn:</th>
+        <th><span id="circuit"></span></th>
+        </tr>
+        <tr>
+          <th>Diện tích hình tròn:</th>
+          <th><span id="square"></span></th>
+        </tr>
+        <tr>
+          <th><input type="button" onclick="cands ()" value="Tính toán"></th>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>
+<script src="./main.js">
+</script>
