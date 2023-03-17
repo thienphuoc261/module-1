@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng lớp mô tả Temparature</title>
+</head>
+<body>
+    <script>
+        let Temparature = function(celcius){
+            this.celcius = celcius;
+            
+            this.getFah = function(){
+                return 1.8 * celcius + 32;
+            }
+            this.getKelvin = function(){
+                return 273.15 + celcius;
+            }
+
+            this.setCelcius = function(celcius){
+                this.celcius = celcius;
+            }
+        };
+        
+        let temparature = new Temparature(25);
+        let kelvin = temparature.getKelvin();
+        let fah = temparature.getFah();
+
+        document.write(kelvin + "K" + " and " + fah + "F");
+    </script>
+</body>
+</html>
