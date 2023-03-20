@@ -73,9 +73,14 @@ let Mobile = function(){
 let iphone = new Mobile();
 let nokia = new Mobile();
 
-// iphone.turnOn();
-// nokia.turnOn();
-// nokia.composeDrafts("Hello iphone");
-// nokia.composeDrafts("Mệt mỏi thiệt");
-// nokia.sendMessage(iphone);
-// iphone.readInbox();
+iphone.turnOn();
+nokia.turnOn();
+nokia.composeDrafts("Hello iphone");
+nokia.composeDrafts("Mệt mỏi thiệt");
+nokia.sendMessage(iphone);
+iphone.readInbox();
+ 
+
+iphone.composeDrafts("Hello Banh`");
+iphone.sendMessage(nokia);
+nokia.readInbox(iphone);
